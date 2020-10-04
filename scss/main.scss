@@ -57,6 +57,7 @@ li{
 .primary{
     background: var(--secondary-clr);
     color: var(--bg-clr);
+    border:2px solid var(--secondary-clr);
 
     .fas{
         margin-left: 5px;
@@ -66,12 +67,21 @@ li{
 .primary-outline{
     border:2px solid var(--bg-clr);
     color: var(--bg-clr);
-    font-weight: 600;
+}
+
+.secondary-outline{
+    border:2px solid var(--secondary-clr);
+    color: var(--secondary-clr);
 }
 
 .btn{
     padding: .5em 1em;
     border-radius: 3px;
+    font-weight: 600;
+}
+
+.btn-sm{
+    font-size: .8rem ;
 }
 
 .mb{
