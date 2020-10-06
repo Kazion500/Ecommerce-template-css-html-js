@@ -1,0 +1,140 @@
+/*
+*=================
+* HERO-PROFILE CSS
+*=================
+*/ 
+
+.profile-hero-section{
+    margin-bottom: 3em;
+   
+    background: #000 ;
+    max-height: 300px;
+    height: 40vh;
+
+    img{
+        width: clamp(50px,10vw,60px);
+        height: clamp(50px,10vw,60px);
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+.profile-hero{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 2em 1em;
+    height: 100%;
+
+    .btn{
+        margin-bottom: 1.3em;
+    }
+}
+
+.seller-profile{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.seller-profile-header-details{
+    text-transform: capitalize;
+
+}
+.seller-profile-header-details h4:first-child{
+        color:var(--primary-clr);
+}
+.seller-profile-header-details h4:last-child{
+        color:var(--line-clr);
+        font-weight: 500;
+        font-size: .9em;
+}
+
+/*
+*============
+* PROFILE CSS
+*============
+*/ 
+
+.profile-details-section{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.our-profile-details,.joined-details{
+    font-size: .84rem;
+    padding: 1em;
+
+    p{
+        margin-bottom: .7em;
+    }
+}
+.joined-details{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p{
+        margin-bottom: .2em;
+    }
+    
+    img{
+        width: 35px;
+        display: inline-block;
+        margin-top: 1em;
+        cursor: pointer;
+    }
+}
+
+.profile-footer-details{
+    text-align: center;
+    padding: .5em 0 1em;
+    .btn{
+        font-size: .6rem;
+        transition: opacity 300ms;
+
+        &:hover{
+            opacity: .9;
+        }
+    }
+}
+
+.our-profile-header,.joined-header,.map-header{
+    padding: .7em 0;
+    text-align: center;
+    border-bottom: 2px solid;
+    
+    h2{
+        font-size: clamp(1rem ,10vw ,1rem);
+    }
+}
+#heads{
+    font-weight: bold;
+}
+.our-profile,.joined,.our-map{
+    margin-bottom: 2em;
+    border: 2px solid;
+    border-radius: 5px;
+    min-height: 200px;
+}
+
+/*
+*===========================
+* CARD-SECTION-PROFILE-RIGHT
+*===========================
+*/ 
+
+.card-wrapper-profile{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+}
+
+
+/*
+*===========================
+* ADD MEDIA QUERY PROFILE!!!
+*===========================
+*/ 

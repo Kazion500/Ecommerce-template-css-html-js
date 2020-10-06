@@ -23,7 +23,7 @@ h1,h2,h3{
     color: var(--secondary-clr);
 }
 h4{
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
 }
 
 img{
@@ -93,4 +93,9 @@ li{
 
 .mt{
     margin-top: 5em;
+}
+
+.active{
+    background: var(--secondary-clr);
+    color: var(--bg-clr) !important
 }
