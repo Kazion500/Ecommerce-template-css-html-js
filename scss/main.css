@@ -16,6 +16,7 @@
   color: var(--bg-clr);
   font-size: .7rem;
   padding: .5em 0;
+  font-weight: 500;
 }
 
 .upper-nav-content {
@@ -33,6 +34,7 @@
 .upper-nav-items a {
   color: var(--bg-clr);
   padding: .5em;
+  font-weight: 500;
 }
 
 .upper-heading {
@@ -78,46 +80,29 @@
   color: var(--bg-clr);
 }
 
-.navbar-nav {
-  padding: 0 !important;
-  position: absolute;
-  font-size: .9rem;
-  background: #000;
-  top: 0;
-  left: -35px;
-  transform: translateX(-200%);
-  transition: transform 250ms;
-}
-
-.hide {
-  transform: translateX(12%);
-}
-
 .lower-nav-items {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  font-size: .8rem;
+  gap: 2em;
   align-items: center;
   justify-content: space-evenly;
-  height: 40vh;
 }
 
 .lower-nav-items a {
   color: var(--secondary-clr);
-  font-weight: 540;
-  padding: 1em;
-  width: 80vw;
+  font-weight: 530;
+  transition: border-bottom 100ms ease-in-out;
 }
 
 .lower-nav-items a:hover {
-  background: #979797;
-  display: block !important;
+  border-bottom: 2px solid;
 }
 
 /*
-*===============
+*====================
 * MAIN HEADER SECTION
-*===============
+*====================
 */
 .header-section-content {
   display: flex;
@@ -144,9 +129,9 @@
 }
 
 /*
-*===============
+*=====================
 * HEADER MEDIA QUERIES
-*===============
+*=====================
 */
 @media (min-width: 568px) {
   .header-main {
@@ -703,12 +688,12 @@ form .btn:hover {
 
 @media (min-width: 568px) {
   .call-to-action {
-    font-size: 1rem;
-    font-weight: 900;
+    font-size: .9rem;
+    font-weight: 800;
     letter-spacing: 1px;
   }
   .call-to-action a {
-    padding: 1em;
+    padding: 1em 2em;
   }
   .cta {
     height: 160px;
@@ -1272,7 +1257,7 @@ li {
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
