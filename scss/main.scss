@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 @import 'global';
 
 
@@ -12,7 +12,8 @@
 body{
     background-color: #fafafa;
     color: var(--secondary-clr);
-    font-family: 'Montserrat';
+    // font-family: 'Montserrat' '';
+    font-family: 'Rubik';
     line-height: 1.5;
     letter-spacing: .5px;
 }
@@ -21,9 +22,6 @@ h1,h2,h3{
     line-height: 1;
     font-weight: 900;
     color: var(--secondary-clr);
-}
-h4{
-    // letter-spacing: 1px;
 }
 
 img{
@@ -62,6 +60,11 @@ li{
     .fas{
         margin-left: 5px;
     }
+}
+.secondary{
+    background: var(--line-clr);
+    color: var(--secondary-clr);
+    padding: .8em 1.7em !important;
 }
 
 .primary-outline{

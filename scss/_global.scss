@@ -1,13 +1,10 @@
 @import 'variables';
 @import 'partials/header';
 @import 'partials/main';
-@import 'partials/product';
+@import 'partials/products';
 @import 'partials/cta';
 @import 'partials/footer';
 @import 'partials/single-product';
 @import 'partials/profile';
-@import 'partials/_product-registration';
-
-body{
-    background: #000;
-}
+@import 'partials/product-registration';
+@import 'partials/find-your-employee';
