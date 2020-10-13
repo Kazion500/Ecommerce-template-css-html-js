@@ -30,9 +30,6 @@
     }
 }
 
-.upper-heading{
-    margin-bottom: 0.3em;
-}
 
 /*
 *===============
@@ -54,8 +51,11 @@
 }
 
 .logo{
-    width: 40%;
+    width: 62%;
     margin-top:.3em;
+    a{
+        padding: 0 !important;
+    }
 
     img{
         width: 100% !important;
@@ -152,10 +152,10 @@
             text-align: center;
         }
     }
-    // .logo{
-    //     width: 40%;
-    //     margin-top:.3em;
-    // }
+    .logo{
+        width: 38%;
+        margin-top:.3em;
+    }
 
     .lower-nav{
         padding: .1em;
@@ -185,7 +185,7 @@
 @media(min-width:768px){
 
     .logo{
-        width: 14%;
+        width: 18%;
     }
     
     .header-section-content{

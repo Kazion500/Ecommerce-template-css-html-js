@@ -40,10 +40,6 @@
   font-weight: 500;
 }
 
-.upper-heading {
-  margin-bottom: 0.3em;
-}
-
 /*
 *===============
 * LOWER NAVBAR
@@ -62,8 +58,12 @@
 }
 
 .logo {
-  width: 40%;
+  width: 62%;
   margin-top: .3em;
+}
+
+.logo a {
+  padding: 0 !important;
 }
 
 .logo img {
@@ -155,6 +155,10 @@
   form h4 {
     text-align: center;
   }
+  .logo {
+    width: 38%;
+    margin-top: .3em;
+  }
   .lower-nav {
     padding: .1em;
   }
@@ -176,7 +180,7 @@
 
 @media (min-width: 768px) {
   .logo {
-    width: 14%;
+    width: 18%;
   }
   .header-section-content {
     min-height: 58vh;
@@ -1619,6 +1623,10 @@ footer {
 .home__courses-card-two-footer .btn {
   border: 2px solid var(--primary-2-clr);
   font-size: .75rem;
+}
+
+.mt-1 {
+  margin-top: 2em;
 }
 
 @media (min-width: 568px) {
