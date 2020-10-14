@@ -369,7 +369,7 @@
     
     .card-wrapper{
         display: grid;
-        grid-template-columns: repeat(2,285px);
+        grid-template-columns: repeat(2,1fr);
         justify-content: center;
         grid-gap: 2em !important;
     }
@@ -399,8 +399,15 @@
 
 }
 
+@media(min-width:768px){
+    .card-wrapper{
+        width: 80%;
+        margin: auto;
+    }
+}
 
-@media(min-width:1000px){
+
+@media(min-width:1060px){
 
   
     .product-hero{
@@ -420,9 +427,9 @@
     }
 
     .card-wrapper{
-        display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-gap: 1em;
+        width: 100%;
     }
 
     .seller-name{
