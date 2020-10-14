@@ -1148,7 +1148,7 @@ footer {
   border: 2px solid var(--line-clr);
   border-radius: 5px;
   border-collapse: collapse;
-  font-size: clamp(0.4rem, 100vw, 0.7rem);
+  font-size: clamp(0.4rem, 3vw, 0.7rem);
   font-weight: 500;
   width: 100%;
   margin: 3em 0;
@@ -1972,6 +1972,7 @@ img {
 a {
   text-decoration: none;
   display: inline-block;
+  color: var(--secondary-clr);
 }
 
 li {
@@ -2039,8 +2040,6 @@ form {
 .mb {
   margin-bottom: 1em;
   color: var(--line-clr);
-  letter-spacing: 7px;
-  text-shadow: 2px 4px 3px black;
 }
 
 .mt {
