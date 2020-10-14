@@ -461,11 +461,11 @@ form .btn:hover {
 * ===============
 */
 .hero {
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../img/catoon.jpg");
-  background-position: center;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../img/bg-product.jpg");
+  background-position: top;
   background-size: cover;
   background-attachment: local;
-  height: 300px;
+  height: 400px;
   width: 100%;
 }
 
