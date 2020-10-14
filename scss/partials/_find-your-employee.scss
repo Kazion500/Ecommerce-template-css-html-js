@@ -221,6 +221,10 @@
 
     h3{
         letter-spacing: 0 !important;
+
+        span{
+            color: var(--primary-clr);
+        }
     }
 
     p{
@@ -260,7 +264,8 @@
     .fye-header{
         justify-content: space-between;
         height: calc(100vh - 60px);
-        max-height: 900px;
+        max-width: 1200px !important;
+        max-height: 650px;
     }
 
     .fye-section-wrapper{
@@ -290,6 +295,7 @@
     .fye-section-two{
         display: flex;
         justify-content: space-around;
+        align-items: center;
     }
     .fye-section-right-one{
         max-width: 400px ;

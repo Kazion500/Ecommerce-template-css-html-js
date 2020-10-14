@@ -84,6 +84,20 @@ form{
 .more-products{
     text-align: center;
     font-size: .9rem;
+
+
+    a{
+        transition: background-color 300ms;
+    }
+    a:hover{
+        background-color:transparent ;
+        color: var(--secondary-clr);
+        border: 2px solid;
+
+        .fas{
+            margin-left: 1em;
+        }
+    }
 }
 // MEDIA QUERIES
 
