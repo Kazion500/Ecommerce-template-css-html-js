@@ -10,7 +10,6 @@ form{
         margin: 2em 0;
 
         &::placeholder{
-            font-weight: 600;
             font-size: .7rem !important;
         }
     }
@@ -79,6 +78,24 @@ form{
     left: 45%;
     box-shadow: 0 0 10px black;
     cursor: pointer;
+
+    img{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+.commentor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -3.3em;
+    left: 45%;
+    color: var(--line-clr);
+    text-shadow: 0 0 10px black;
 }
 
 .more-products{
@@ -105,6 +122,10 @@ form{
     .reviewer-img{
         left: 47%;
     }
+
+    .commentor{
+        left: 46.5%;
+    }
 }
 
 @media(min-width:1000px){
@@ -119,6 +140,15 @@ form{
         width: 60px;
         height: 60px;
         bottom: -1.5em;
+        
+        img{
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .commentor{
+        bottom: -3.1em;
     }
 
 }

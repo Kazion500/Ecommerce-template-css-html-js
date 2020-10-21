@@ -53,7 +53,7 @@ form{
 }
 
 ::placeholder,button{
-    font-family: 'Montserrat';
+    font-family: Rubik;
 }
 
 .container{
@@ -76,6 +76,16 @@ form{
         margin-left: 5px;
     }
 }
+
+.primary-1{
+    background: var(--secondary-clr) !important;
+    color: var(--bg-clr);
+    border:2px solid var(--secondary-clr);
+
+    .fas{
+        margin-left: 5px;
+    }
+}
 .secondary{
     background: var(--line-clr);
     color: var(--secondary-clr);
@@ -88,7 +98,7 @@ form{
 }
 
 .secondary-outline{
-    border:2px solid var(--secondary-clr);
+    border:2px solid var(--secondary-clr) !important;
     color: var(--secondary-clr);
 }
 

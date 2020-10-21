@@ -91,9 +91,6 @@
     }
 }
 
-@media(min-width:568px){
-
-}
 
 @media(min-width:768px){
     .product-logo{
@@ -189,6 +186,12 @@
 * Product-Listing
 *=================
 */ 
+.card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    grid-gap: 1em;
+}
 
 #products{
     margin-top: 2.5em;
@@ -232,11 +235,18 @@
     font-size: clamp(.7rem,3.5vw,.8rem);
 
     h4{
-        background: var(--secondary-clr);
-        border-radius: 0 5em 0 0;
-        padding: .4em 1.5em .5em 1em;
-        color: var(--bg-clr);
-        font-size: clamp(.7rem,3.5vw,.8rem);
+        text-transform: uppercase;
+        padding: .4em 1.5em .5em 0;
+        font-size: clamp(.7rem,3.5vw,1.2rem);
+
+        &::after{
+            content: '';
+            margin-top: .3em;
+            width: 80vw;
+            height: 2.5px;
+            background:var(--secondary-clr);
+            display: block;
+        }
     }
 
 }
@@ -273,7 +283,7 @@
             border-radius: 5px 5px 0 0 ;
             width: 100% !important;
             display: block;
-            height: 290px;
+            height: 120px;
             object-fit: cover;
             transition: transform 300ms ease-in-out;
 
@@ -291,11 +301,12 @@
 
         p{
             font-weight: 800;
-            font-size: .6rem;
+            font-size: .5rem;
         }
 
         h5{
-            font-size: .9rem;
+            margin-top: .5em;
+            font-size: .7rem;
         }
         .product-category{
             color: var(--line-clr);
@@ -310,18 +321,19 @@
             text-decoration: line-through; 
         }
         .fa-star{
-            font-size: .6rem;
+            font-size: .4rem;
         }
     }
     &-footer{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         padding: .5em 1em;
 
         #seller-img{
-            width: 45px;
-            height: 45px;
+            width: 20px;
+            height: 20px;
             border-radius: 50%;
             overflow: hidden;
             border: 2px solid var(--line-clr);
@@ -346,15 +358,16 @@
         .user-thumnail{
             display: flex;
             align-items: center;
-            justify-content: flex-start;
-            gap: 10px;
+            justify-content: center;
+            gap: 5px;
         }
 
         .seller-name,.contact-seller{
-            font-size: .6rem;
+            font-size: .4rem;
             font-weight: 500;
         }
         .contact-seller{
+            margin-top: 1.5em;
             background: var(--secondary-clr);
             border-radius: 4px;
             padding: .6em 1em;
@@ -366,16 +379,53 @@
 
 
 @media(min-width:568px){
-    
+    .tab-filter{
+        font-size: .7rem;
+
+    }
+
     .card-wrapper{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        justify-content: center;
-        grid-gap: 2em !important;
+        grid-gap: 2em;
     }
 
     .card{
-        width: initial;
+    
+        &-img{
+            img{
+                height: 220px;
+            }
+            
+        }
+    
+        &-body{
+    
+            p{
+                font-size: .6rem;
+            }
+    
+            h5{
+                font-size: .9rem;
+            }
+            .fa-star{
+                font-size: .6rem;
+            }
+        }
+        &-footer{
+            flex-direction: row;
+            justify-content: space-between;
+    
+            #seller-img{
+                width: 40px;
+                height: 40px;
+            }
+    
+            .seller-name,.contact-seller{
+                font-size: .55rem;
+            }
+            .contact-seller{
+                margin-top: 0;
+            }
+        }
     }
 
     .product-listing{
@@ -404,6 +454,10 @@
         width: 80%;
         margin: auto;
     }
+    
+    .tab-filter{
+        font-size: .8rem;
+    }
 }
 
 
@@ -422,9 +476,7 @@
         }
     }
 
-    .tab-filter{
-        font-size: .8rem;
-    }
+
 
     .card-wrapper{
         grid-template-columns: repeat(4,1fr);
@@ -435,4 +487,6 @@
     .seller-name{
         font-size: .65rem !important;
     }
+
+    
 }
