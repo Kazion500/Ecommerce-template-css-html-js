@@ -277,6 +277,10 @@ form .btn:hover {
   margin: 2em 0 0;
 }
 
+.glider {
+  overflow: hidden !important;
+}
+
 .review {
   position: relative;
   background: var(--bg-clr);
@@ -586,9 +590,6 @@ form .btn:hover {
 }
 
 .product-heading-styled {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-bottom: 3em;
   font-size: clamp(0.7rem, 3.5vw, 0.8rem);
 }
@@ -596,16 +597,8 @@ form .btn:hover {
 .product-heading-styled h4 {
   text-transform: uppercase;
   padding: .4em 1.5em .5em 0;
-  font-size: clamp(0.7rem, 3.5vw, 1.2rem);
-}
-
-.product-heading-styled h4::after {
-  content: '';
-  margin-top: .3em;
-  width: 80vw;
-  height: 2.5px;
-  background: var(--secondary-clr);
-  display: block;
+  font-size: clamp(0.7rem, 3.5vw, 1.1rem);
+  letter-spacing: normal;
 }
 
 /*
@@ -737,6 +730,9 @@ form .btn:hover {
 }
 
 @media (min-width: 568px) {
+  h4::after {
+    width: 89vw !important;
+  }
   .tab-filter {
     font-size: .7rem;
   }
@@ -796,6 +792,9 @@ form .btn:hover {
 }
 
 @media (min-width: 1060px) {
+  h4::after {
+    max-width: 1260px;
+  }
   .product-hero a {
     font-size: 1.5rem;
   }
@@ -938,7 +937,7 @@ footer {
 }
 
 .logo-brand img {
-  width: 80%;
+  width: 60%;
 }
 
 .footer {
@@ -1079,15 +1078,23 @@ footer {
 * HERO-PROFILE CSS
 *=================
 */
+.cover_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
 .profile-filter-heading a {
   font-size: .58rem !important;
 }
 
 .profile-hero-section {
+  position: relative;
   margin-bottom: 3em;
-  background: #000;
-  max-height: 300px;
-  height: 35vh;
+  max-height: 340px;
+  height: 40vh;
 }
 
 .profile-hero-section img {
@@ -1109,6 +1116,49 @@ footer {
 .profile-hero .btn {
   margin-bottom: 1.3em;
   font-size: .7rem;
+  position: relative !important;
+}
+
+.profile-hero #cover_image_form {
+  padding: 1em 0;
+  display: none;
+  position: absolute;
+  bottom: -6em;
+  right: 4em;
+  background: var(--secondary-clr);
+  width: 250px;
+  border-radius: 5px;
+}
+
+.profile-hero #cover_image_form #cover_img {
+  display: none;
+}
+
+.profile-hero #cover_image_form label {
+  width: 70%;
+  margin-left: -1em;
+}
+
+.profile-hero #cover_image_form label::before {
+  content: 'Select Image';
+  background: var(--line-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: .7em;
+  margin-bottom: .5em;
+  font-size: .9rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-hero #cover_image_form input {
+  background: #000;
+}
+
+.display_form_image {
+  display: flex !important;
 }
 
 .seller-profile {
@@ -1391,9 +1441,10 @@ footer {
 }
 
 .form h2 {
-  font-size: clamp(0.7rem, 100vw, 0.8rem);
+  margin-top: 1em;
+  font-size: clamp(0.7rem, 100vw, 1rem);
   text-align: center;
-  padding: .5em 0;
+  text-transform: uppercase;
 }
 
 .form .form-row {
@@ -1632,6 +1683,7 @@ footer {
   margin-bottom: 1.5em;
   border: 2px solid var(--grey-clr);
   border-radius: 5px;
+  color: var(--bg-clr);
 }
 
 .fye-input::placeholder {
@@ -2147,7 +2199,7 @@ footer {
   padding: 2em 0;
 }
 
-#login-form .login-form h3 {
+#login-form .login-form h1 {
   text-align: center;
 }
 
@@ -2157,10 +2209,6 @@ footer {
 
 #login-form .login-form div {
   width: 100%;
-}
-
-#login-form .login-form small {
-  margin-top: 1em;
 }
 
 #login-form #flag_id_country {
@@ -2203,7 +2251,7 @@ select {
 .form-auth {
   display: block;
   width: 70% !important;
-  margin: 2em auto 0;
+  margin: 0 auto 1.2em;
   padding: .8em 1em;
   border: 0;
   border-bottom: 2px solid var(--line-clr);
@@ -2285,16 +2333,16 @@ input, textarea {
   right: 0;
   bottom: -240%;
   display: none;
+  z-index: 1000;
 }
 
 .user-settings a {
-  transition: background 300ms;
+  transition: color 300ms;
   padding: 1em;
 }
 
 .user-settings a:hover {
-  background: var(--secondary-clr);
-  color: var(--bg-clr);
+  color: var(--primary-clr);
 }
 
 .display-setting {
@@ -2419,7 +2467,7 @@ form {
   margin-top: 5em;
 }
 
-.active {
+.active-class {
   background: var(--secondary-clr);
   color: var(--bg-clr) !important;
 }

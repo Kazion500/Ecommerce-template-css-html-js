@@ -99,9 +99,10 @@
     margin-top: 2.3em;
 
     h2{
-        font-size: clamp(.7rem,100vw,.8rem);
+        margin-top: 1em;
+        font-size: clamp(.7rem,100vw,1rem);
         text-align: center;
-        padding: .5em 0;
+        text-transform: uppercase;
     }
 
     .form-row{

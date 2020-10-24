@@ -19,7 +19,7 @@
         width: 100%;
         padding: 2em 0;
 
-        h3{
+        h1{
             text-align: center;
         }
 
@@ -28,10 +28,6 @@
         }
         div{
             width: 100%;
-        }
-
-        small{
-            margin-top: 1em;
         }
     }
 
@@ -91,7 +87,7 @@ select{
 .form-auth{
     display: block;
     width: 70% !important;
-    margin: 2em auto 0;
+    margin: 0 auto 1.2em;
     padding: .8em 1em;
     border: 0;
     border-bottom: 2px solid var(--line-clr);
@@ -181,18 +177,16 @@ input,textarea{
     right: 0;
     bottom: -240%;
     display: none;
+    z-index: 1000;
 
     a{
-        transition: background 300ms;
+        transition: color 300ms;
         padding: 1em;
 
         &:hover{
-            background:  var(--secondary-clr);
-            color: var(--bg-clr);
+            color: var(--primary-clr);
         }
-    }
-
-  
+    } 
 }
 
 .display-setting{
